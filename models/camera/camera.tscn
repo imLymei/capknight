@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bbyvur5a52gmq"]
+
+[ext_resource type="Script" path="res://models/camera/camera.gd" id="1_hkwg5"]
+
+[node name="Camera" type="Camera2D"]
+position_smoothing_enabled = true
+script = ExtResource("1_hkwg5")

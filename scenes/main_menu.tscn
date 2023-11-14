@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://ccfayw4a46pgx"]
+
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_nbjcm"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_nbjcm")
+
+[node name="Host" type="Button" parent="."]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Host"
+
+[node name="Connect" type="Button" parent="."]
+offset_left = 55.0
+offset_right = 98.0
+offset_bottom = 31.0
+text = "Connect"
+
+[node name="Address" type="LineEdit" parent="."]
+layout_mode = 0
+offset_left = 143.0
+offset_right = 277.0
+offset_bottom = 31.0
+text = "127.0.0.1"
+
+[connection signal="pressed" from="Host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="Connect" to="." method="_on_connect_pressed"]

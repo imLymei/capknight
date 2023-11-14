@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dh67ynmu53v7y"]
+
+[ext_resource type="Texture2D" uid="uid://wb6ilcur1ww" path="res://assets/tilemap/floor/wooden.png" id="1_5cx4h"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g5rsx"]
+texture = ExtResource("1_5cx4h")
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kkvdo"]
+sources/0 = SubResource("TileSetAtlasSource_g5rsx")
+
+[node name="FloorTileMap" type="TileMap"]
+tile_set = SubResource("TileSet_kkvdo")
+format = 2
